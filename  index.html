@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cinematic Developer Hub</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#F5EFE6;          /* Warm Beige */
+  --primary:#1B4332;     /* Deep Green */
+  --accent:#CC5500;      /* Burnt Orange */
+  --text:#1b1b1b;
+  --glass:rgba(255,255,255,0.55);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  cursor:none;
+}
+
+/* ================= CURSOR ================= */
+.cursor{
+  width:14px;height:14px;
+  background:var(--accent);
+  border-radius:50%;
+  position:fixed;
+  pointer-events:none!important;
+  transform:translate(-50%,-50%);
+  transition:transform .08s ease, width .35s ease, height .35s ease;
+  z-index:9999;
+}
+.cursor.pointer{
+  width:28px;height:28px;
+  background:transparent;
+  border:2px solid var(--accent);
+}
+
+/* ================= NAV ================= */
+nav{
+  position:sticky;
+  top:0;
+  background:rgba(245,239,230,.8);
+  backdrop-filter:blur(10px);
+  padding:1rem 6vw;
+  display:flex;
+  justify-content:space-between;
+  z-index:100;
+}
+nav h1{color:var(--primary)}
+nav a{
+  margin-left:1.5rem;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:600;
+}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:6rem 6vw;
+}
+h2{
+  font-size:2.5rem;
+  margin-bottom:2rem;
+  color:var(--primary);
+}
+p{max-width:700px;margin-bottom:2rem}
+
+/* ================= GRID & CARDS ================= */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.5rem;
+}
+.card{
+  background:var(--glass);
+  backdrop-filter:blur(18px);
+  border-radius:22px;
+  padding:1.6rem;
+  transition:.35s cubic-bezier(.16,1,.3,1);
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ================= LINKS ================= */
+.links a{
+  display:block;
+  margin:.5rem 0;
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:500;
+}
+.links a:hover{color:var(--accent)}
+
+/* ================= FOOTER ================= */
+footer{
+  text-align:center;
+  padding:3rem;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="cursor"></div>
+
+<nav>
+  <h1>Developer Hub</h1>
+  <div>
+    <a href="#languages">Languages</a>
+    <a href="#tech">Tech Stack</a>
+    <a href="#dsa">DSA</a>
+    <a href="#db">Databases</a>
+  </div>
+</nav>
+
+<!-- ================= LANGUAGES ================= -->
+<section id="languages">
+<h2>Programming Languages</h2>
+<div class="grid">
+
+<div class="card"><h3>C</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>C++</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Java</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=grEKMHGYyns" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Python</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>JavaScript</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>TypeScript</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=gp5H0Vw39yw" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Go</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=YS4e4q9oBaU" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Rust</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=ygL_xcavzQ4" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Kotlin</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=F9UC9DY-vIU" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Swift</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=comQ1-x2a1Q" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>PHP</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Ruby</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=t_ispmWmdjY" target="_blank">freeCodeCamp</a>
+</div></div>
+
+</div>
+</section>
+
+<!-- ================= TECH STACK ================= -->
+<section id="tech">
+<h2>Tech Stacks</h2>
+<div class="grid">
+
+<div class="card"><h3>MERN Stack</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=7CqJlxBYj-M" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Java Full Stack</h3><div class="links">
+<a href="https://youtube.com/playlist?list=PLq0IPBF63Mw2zVkPrucUoIAWNzh9tN4Nm" target="_blank">
+Hum Aur Code
+</a>
+</div></div>
+
+</div>
+</section>
+
+<!-- ================= DSA ================= -->
+<section id="dsa">
+<h2>DSA by Language</h2>
+<div class="grid">
+
+<div class="card"><h3>DSA in C</h3><div class="links">
+<a href="https://youtube.com/playlist?list=PLf0LpPWikpPfA_vez2NndnYuQy6WkpTzc" target="_blank">
+DataFlair
+</a>
+</div></div>
+
+<div class="card"><h3>DSA in C++</h3><div class="links">
+<a href="https://youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt" target="_blank">
+Apna College
+</a>
+</div></div>
+
+<div class="card"><h3>DSA in Java</h3><div class="links">
+<a href="https://youtube.com/playlist?list=PLjzLBp9HHZWhVXBSPS1VqxXXDoVk07gd9" target="_blank">
+Engineering Animuthyam
+</a>
+</div></div>
+
+<div class="card"><h3>DSA in Python</h3><div class="links">
+<a href="https://youtu.be/pkYVOmU3MgA" target="_blank">
+freeCodeCamp
+</a>
+</div></div>
+
+</div>
+</section>
+
+<!-- ================= DATABASES ================= -->
+<section id="db">
+<h2>Database Courses</h2>
+<div class="grid">
+
+<div class="card"><h3>MySQL</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>PostgreSQL</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=qw--VYLpxG4" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>MongoDB</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=-56x56UppqQ" target="_blank">freeCodeCamp</a>
+</div></div>
+
+<div class="card"><h3>Firebase</h3><div class="links">
+<a href="https://www.youtube.com/watch?v=fgdpvwEWJ9M" target="_blank">freeCodeCamp</a>
+</div></div>
+
+</div>
+</section>
+
+<footer>
+Warm Beige • Deep Green • Burnt Orange — Cinematic Developer Hub
+</footer>
+
+<script>
+const cursor=document.querySelector('.cursor');
+
+document.addEventListener('mousemove',e=>{
+  cursor.style.left=e.clientX+'px';
+  cursor.style.top=e.clientY+'px';
+});
+
+document.querySelectorAll('a,h1,h2,h3').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cursor.classList.add('pointer'));
+  el.addEventListener('mouseleave',()=>cursor.classList.remove('pointer'));
+});
+</script>
+
+</body>
+</html>
